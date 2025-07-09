@@ -1,0 +1,54 @@
+.app {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+  color: #000000;
+  transition: background 0.3s, color 0.3s;
+  padding: 2rem;
+}
+
+.app.dark {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+
+.task-input {
+  margin-top: 20px;
+}
+
+.task-input input {
+  padding: 10px;
+  width: 200px;
+}
+
+.task-input button {
+  margin-left: 10px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.task-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.task-list li {
+  margin: 10px 0;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.task-list li span {
+  margin-right: 10px;
+}
+
+.task-list li.completed span {
+  text-decoration: line-through;
+  color: gray;
+}
